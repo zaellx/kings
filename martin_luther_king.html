@@ -40,7 +40,6 @@
     position: relative;
   }
 
-  /* ---------- decorative silhouette ---------- */
 
   .silhouette{
     display: none;
@@ -65,8 +64,6 @@
     0%,100%{ transform: translateY(0px); }
     50%{ transform: translateY(-22px); }
   }
-
-  /* ---------- Header / Hero ---------- */
 
   header.hero{
     padding: 64px 24px 34px;
@@ -145,8 +142,6 @@
     opacity: 0.82;
   }
 
-  /* ---------- nav pills ---------- */
-
   .navpills{
     display:flex;
     gap:10px;
@@ -174,7 +169,7 @@
   .pill[data-c="red"]{ background: var(--red); color: var(--cream); }
   .pill[data-c="teal"]{ background: var(--teal); color: var(--navy); }
 
-  /* ---------- progress + surprise bar ---------- */
+  /*surprise bar*/
 
   .toolbar{
     display:flex;
@@ -220,7 +215,6 @@
   .surprise-btn:active{ transform: translateY(0) scale(0.98); }
   .surprise-btn svg{ width:16px; height:16px; }
 
-  /* ---------- Section label ---------- */
 
   .section-label{
     margin: 52px 0 18px;
@@ -245,7 +239,6 @@
     opacity: 0.5;
   }
 
-  /* ---------- Accordion ---------- */
 
   .file{
     border-top: 1px solid var(--rule);
@@ -345,7 +338,7 @@
     font-style: italic;
   }
 
-  /* ---------- Footer ---------- */
+ 
 
   footer{
     margin-top: 64px;
@@ -358,7 +351,6 @@
     z-index: 1;
   }
 
-  /* ---------- Back to top ---------- */
 
   .totop{
     position: fixed;
@@ -566,7 +558,7 @@
     });
   });
 
-  // Surprise me: open a random unopened card, scroll to it, pulse it
+  // Surprise me
   document.getElementById('surprise-btn').addEventListener('click', () => {
     const closed = allDetails.filter(d => !d.open);
     const pool = closed.length ? closed : allDetails;
@@ -580,7 +572,6 @@
     fileCard.classList.add('pulse');
   });
 
-  // Back to top button
   const totopBtn = document.getElementById('totop-btn');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 480) totopBtn.classList.add('show');
@@ -588,7 +579,6 @@
   });
   totopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  // Ambient sparks
   const sparksEl = document.getElementById('sparks');
   const colors = ['#f7b733', '#e63946', '#2ec4b6'];
   for (let i = 0; i < 16; i++){
