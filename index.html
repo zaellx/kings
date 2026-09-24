@@ -14,6 +14,7 @@
     --gold-deep:#d99414;
     --red:#e63946;
     --teal:#2ec4b6;
+    --violet:#a06cd5;
     --cream:#fbf3e1;
     --ink:#161327;
     --rule: rgba(251,243,225,0.14);
@@ -168,6 +169,7 @@
   .pill[data-c="gold"]{ background: var(--gold); }
   .pill[data-c="red"]{ background: var(--red); color: var(--cream); }
   .pill[data-c="teal"]{ background: var(--teal); color: var(--navy); }
+  .pill[data-c="violet"]{ background: var(--violet); color: var(--cream); }
 
   /*surprise bar*/
 
@@ -410,6 +412,7 @@
       <button class="pill" data-c="gold" onclick="document.getElementById('sec-life').scrollIntoView()">Who he was</button>
       <button class="pill" data-c="red" onclick="document.getElementById('sec-movement').scrollIntoView()">What he fought for</button>
       <button class="pill" data-c="teal" onclick="document.getElementById('sec-reflect').scrollIntoView()">If he were here now</button>
+      <button class="pill" data-c="violet" onclick="document.getElementById('sec-choices').scrollIntoView()">The choices that shaped him</button>
     </nav>
 
     <div class="toolbar">
@@ -519,6 +522,44 @@
       </summary>
       <div class="panel"><div class="panel-inner">
         The civil rights movement could have taken a much more violent turn across the United States.
+      </div></div>
+    </details>
+  </div>
+
+  <p class="section-label" id="sec-choices">The Choices That Shaped the Leader<span>PIVOTAL DECISIONS</span></p>
+
+  <div class="file" data-accent="violet">
+    <details>
+      <summary>
+        <span class="mark" style="--accent:var(--violet)"></span>
+        <span class="prompt">If he couldn't have studied sociology, <em>he'd have become a different kind of person</em></span>
+      </summary>
+      <div class="panel"><div class="panel-inner">
+        His education shaped the way he saw the world and the tools he brought to his cause — without it, the leader we remember might never have taken shape.
+      </div></div>
+    </details>
+  </div>
+
+  <div class="file" data-accent="violet">
+    <details>
+      <summary>
+        <span class="mark" style="--accent:var(--violet)"></span>
+        <span class="prompt">King could have chosen another cause to fight for, <em>but he decided to lead a movement for social justice</em></span>
+      </summary>
+      <div class="panel"><div class="panel-inner">
+        Of all the causes he could have taken up, he chose to dedicate his life to social justice and civil rights — a decision that defined his legacy.
+      </div></div>
+    </details>
+  </div>
+
+  <div class="file" data-accent="violet">
+    <details>
+      <summary>
+        <span class="mark" style="--accent:var(--violet)"></span>
+        <span class="prompt">If he hadn't been influenced by Mahatma Gandhi, <em>he wouldn't have become a leader</em></span>
+      </summary>
+      <div class="panel"><div class="panel-inner">
+        Gandhi's example of nonviolent resistance gave King both a philosophy and a method — the foundation on which his leadership was built.
       </div></div>
     </details>
   </div>
